@@ -1,14 +1,14 @@
 //
-//  WordleAppApp.swift
-//  WordleApp
+//  WodleApp.swift
+//  Wodle
 //
-//  Created by İbrahim Bayram on 30.01.2024.
+//  Created by İbrahim Bayram on 29.01.2024.
 //
 
 import SwiftUI
 
 @main
-struct WordleAppApp: App {
+struct WodleApp: App {
     @StateObject var dm = WordleDataModel()
     var body: some Scene {
         WindowGroup {
