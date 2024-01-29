@@ -16,7 +16,7 @@ struct LetterButtonView: View {
         }, label: {
             Text(letter)
                 .font(.system(size: 20))
-                .frame(width: 35,height: 50)
+                .frame(width: 30,height: 50)
                 .background(dm.keyColors[letter])
                 .foregroundStyle(.primary)
         })
