@@ -54,8 +54,8 @@ struct Keyboard: View {
                         .foregroundStyle(.primary)
                         .background(.unused)
                 }
-                .disabled(dm.currentWord.count < 5 || !dm.inPlay)
-                .opacity((dm.currentWord.count < 5 || !dm.inPlay) ? 0.6 : 1)
+                .disabled(dm.currentWord.count == 0 || !dm.inPlay)
+                .opacity((dm.currentWord.count == 0 || !dm.inPlay) ? 0.6 : 1)
             }
         }
     }

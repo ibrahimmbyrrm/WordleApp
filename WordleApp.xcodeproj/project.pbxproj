@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8003D7FF2B690AFF00995888 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D7FE2B690AFF00995888 /* Shake.swift */; };
 		80EC0FF12B686A4600485B38 /* WordleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC0FF02B686A4600485B38 /* WordleAppApp.swift */; };
 		80EC0FF82B686A4800485B38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */; };
 		80EC101D2B686AA400485B38 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC100F2B686AA400485B38 /* GameView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8003D7FE2B690AFF00995888 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		80EC0FED2B686A4600485B38 /* WordleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EC0FF02B686A4600485B38 /* WordleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleAppApp.swift; sourceTree = "<group>"; };
 		80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8003D7FD2B690AF800995888 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8003D7FE2B690AFF00995888 /* Shake.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		80EC0FE42B686A4600485B38 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		80EC0FEF2B686A4600485B38 /* WordleApp */ = {
 			isa = PBXGroup;
 			children = (
+				8003D7FD2B690AF800995888 /* Animations */,
 				80EC10132B686AA400485B38 /* ViewModels */,
 				80EC100E2B686AA400485B38 /* Views */,
 				80EC0FF02B686A4600485B38 /* WordleAppApp.swift */,
@@ -200,6 +211,7 @@
 				80EC101D2B686AA400485B38 /* GameView.swift in Sources */,
 				80EC10232B686AA400485B38 /* Guess.swift in Sources */,
 				80EC10272B686AA400485B38 /* Color+Ext.swift in Sources */,
+				8003D7FF2B690AFF00995888 /* Shake.swift in Sources */,
 				80EC0FF12B686A4600485B38 /* WordleAppApp.swift in Sources */,
 				80EC10202B686AA400485B38 /* Keyboard.swift in Sources */,
 				80EC101F2B686AA400485B38 /* LetterButtonView.swift in Sources */,
