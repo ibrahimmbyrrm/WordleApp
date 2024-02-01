@@ -66,9 +66,20 @@ struct StatsView: View {
                         
                     }
                 }
-                if dm.gameOver {
+                Spacer()
+                if !dm.gameOver {
                     HStack {
-                        Spacer()
+                        Button(action: {
+                            dm.newGame()
+                            dm.shouldShowStats.toggle()
+                        }, label: {
+                            HStack {
+                                Text("New Game")
+                            }
+                            .foregroundStyle(.white)
+                            .padding()
+                            .background(RoundedRectangle(cornerRadius: 24).fill(Color.correct))
+                        })
                         Button(action: {
                             dm.shareResult()
                         }, label: {
@@ -78,7 +89,7 @@ struct StatsView: View {
                             }
                             .foregroundStyle(.white)
                             .padding()
-                            .background(Color.correct)
+                            .background(RoundedRectangle(cornerRadius: 24).fill(Color.correct))
                         })
                     }
                 }
@@ -86,7 +97,7 @@ struct StatsView: View {
             Spacer()
         }
         .padding(.horizontal,40)
-        .frame(width: 320,height: 370)
+        .frame(width: 320,height: 400)
         .background(RoundedRectangle(cornerRadius: 15).fill(Color.systemBackground))
         .padding()
         .shadow(color: .black.opacity(0.3), radius: 10)

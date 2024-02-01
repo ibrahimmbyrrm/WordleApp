@@ -75,6 +75,53 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		80B539EB2B6C656800F659AF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				80B539EF2B6C657B00F659AF /* InformationScreen */,
+				80B539EE2B6C657600F659AF /* SettingsScreen */,
+				80B539ED2B6C657100F659AF /* StatsScreen */,
+				80B539EC2B6C656B00F659AF /* GameScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		80B539EC2B6C656B00F659AF /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				80EC10112B686AA400485B38 /* LetterButtonView.swift */,
+				80EC10122B686AA400485B38 /* Keyboard.swift */,
+				80EC10102B686AA400485B38 /* GuessView.swift */,
+				80EC100F2B686AA400485B38 /* GameView.swift */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		80B539ED2B6C657100F659AF /* StatsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8044E28B2B6A6FC80045C454 /* ToastView.swift */,
+				8044E28F2B6A97ED0045C454 /* StatsView.swift */,
+			);
+			path = StatsScreen;
+			sourceTree = "<group>";
+		};
+		80B539EE2B6C657600F659AF /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				80B539E72B6C34BB00F659AF /* SettingsView.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		80B539EF2B6C657B00F659AF /* InformationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				80B539E92B6C3E4200F659AF /* InfoView.swift */,
+			);
+			path = InformationScreen;
+			sourceTree = "<group>";
+		};
 		80EC0FE42B686A4600485B38 = {
 			isa = PBXGroup;
 			children = (
@@ -94,14 +141,14 @@
 		80EC0FEF2B686A4600485B38 /* WordleApp */ = {
 			isa = PBXGroup;
 			children = (
-				8003D7FD2B690AF800995888 /* Animations */,
 				80EC10132B686AA400485B38 /* ViewModels */,
-				80EC100E2B686AA400485B38 /* Views */,
-				80EC0FF02B686A4600485B38 /* WordleAppApp.swift */,
+				80B539EB2B6C656800F659AF /* Screens */,
+				8003D7FD2B690AF800995888 /* Animations */,
 				80EC10152B686AA400485B38 /* Models */,
 				80EC101B2B686AA400485B38 /* Extensions */,
 				80EC10182B686AA400485B38 /* Assets.xcassets */,
 				80EC101A2B686AA400485B38 /* Launch Screen.storyboard */,
+				80EC0FF02B686A4600485B38 /* WordleAppApp.swift */,
 				80EC0FF62B686A4800485B38 /* Preview Content */,
 			);
 			path = WordleApp;
@@ -113,21 +160,6 @@
 				80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		80EC100E2B686AA400485B38 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				80EC100F2B686AA400485B38 /* GameView.swift */,
-				80EC10102B686AA400485B38 /* GuessView.swift */,
-				80EC10112B686AA400485B38 /* LetterButtonView.swift */,
-				80EC10122B686AA400485B38 /* Keyboard.swift */,
-				8044E28B2B6A6FC80045C454 /* ToastView.swift */,
-				8044E28F2B6A97ED0045C454 /* StatsView.swift */,
-				80B539E72B6C34BB00F659AF /* SettingsView.swift */,
-				80B539E92B6C3E4200F659AF /* InfoView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		80EC10132B686AA400485B38 /* ViewModels */ = {
