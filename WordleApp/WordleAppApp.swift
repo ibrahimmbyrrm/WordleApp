@@ -10,10 +10,15 @@ import SwiftUI
 @main
 struct WordleAppApp: App {
     @StateObject var dm = WordleDataModel()
+    @StateObject var cs = ColorSchemeManager()
     var body: some Scene {
         WindowGroup {
             GameView()
                 .environmentObject(dm)
+                .environmentObject(cs)
+                .onAppear() {
+                    cs.applyColorScheme()
+                }
         }
     }
 }

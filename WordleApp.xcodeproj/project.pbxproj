@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8003D7FF2B690AFF00995888 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D7FE2B690AFF00995888 /* Shake.swift */; };
+		8044E28C2B6A6FC80045C454 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8044E28B2B6A6FC80045C454 /* ToastView.swift */; };
+		8044E28E2B6A94480045C454 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8044E28D2B6A94480045C454 /* Statistic.swift */; };
+		8044E2902B6A97ED0045C454 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8044E28F2B6A97ED0045C454 /* StatsView.swift */; };
+		805929E62B6932980045454D /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805929E52B6932980045454D /* FlipView.swift */; };
+		80B539E42B6BCF6E00F659AF /* UIWindow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E32B6BCF6E00F659AF /* UIWindow+Ext.swift */; };
+		80B539E62B6C33CA00F659AF /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E52B6C33CA00F659AF /* ColorSchemeManager.swift */; };
+		80B539E82B6C34BB00F659AF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E72B6C34BB00F659AF /* SettingsView.swift */; };
 		80EC0FF12B686A4600485B38 /* WordleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC0FF02B686A4600485B38 /* WordleAppApp.swift */; };
 		80EC0FF82B686A4800485B38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */; };
 		80EC101D2B686AA400485B38 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC100F2B686AA400485B38 /* GameView.swift */; };
@@ -24,6 +31,13 @@
 
 /* Begin PBXFileReference section */
 		8003D7FE2B690AFF00995888 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		8044E28B2B6A6FC80045C454 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		8044E28D2B6A94480045C454 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		8044E28F2B6A97ED0045C454 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		805929E52B6932980045454D /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		80B539E32B6BCF6E00F659AF /* UIWindow+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ext.swift"; sourceTree = "<group>"; };
+		80B539E52B6C33CA00F659AF /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
+		80B539E72B6C34BB00F659AF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		80EC0FED2B686A4600485B38 /* WordleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EC0FF02B686A4600485B38 /* WordleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleAppApp.swift; sourceTree = "<group>"; };
 		80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				8003D7FE2B690AFF00995888 /* Shake.swift */,
+				805929E52B6932980045454D /* FlipView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -105,6 +120,9 @@
 				80EC10102B686AA400485B38 /* GuessView.swift */,
 				80EC10112B686AA400485B38 /* LetterButtonView.swift */,
 				80EC10122B686AA400485B38 /* Keyboard.swift */,
+				8044E28B2B6A6FC80045C454 /* ToastView.swift */,
+				8044E28F2B6A97ED0045C454 /* StatsView.swift */,
+				80B539E72B6C34BB00F659AF /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				80EC10142B686AA400485B38 /* WordleDataModel.swift */,
+				80B539E52B6C33CA00F659AF /* ColorSchemeManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -122,6 +141,7 @@
 			children = (
 				80EC10162B686AA400485B38 /* Global.swift */,
 				80EC10172B686AA400485B38 /* Guess.swift */,
+				8044E28D2B6A94480045C454 /* Statistic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				80EC101C2B686AA400485B38 /* Color+Ext.swift */,
+				80B539E32B6BCF6E00F659AF /* UIWindow+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,8 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EC10222B686AA400485B38 /* Global.swift in Sources */,
+				80B539E42B6BCF6E00F659AF /* UIWindow+Ext.swift in Sources */,
+				80B539E62B6C33CA00F659AF /* ColorSchemeManager.swift in Sources */,
+				805929E62B6932980045454D /* FlipView.swift in Sources */,
 				80EC10212B686AA400485B38 /* WordleDataModel.swift in Sources */,
+				80B539E82B6C34BB00F659AF /* SettingsView.swift in Sources */,
 				80EC101E2B686AA400485B38 /* GuessView.swift in Sources */,
+				8044E28C2B6A6FC80045C454 /* ToastView.swift in Sources */,
 				80EC101D2B686AA400485B38 /* GameView.swift in Sources */,
 				80EC10232B686AA400485B38 /* Guess.swift in Sources */,
 				80EC10272B686AA400485B38 /* Color+Ext.swift in Sources */,
@@ -215,6 +241,8 @@
 				80EC0FF12B686A4600485B38 /* WordleAppApp.swift in Sources */,
 				80EC10202B686AA400485B38 /* Keyboard.swift in Sources */,
 				80EC101F2B686AA400485B38 /* LetterButtonView.swift in Sources */,
+				8044E2902B6A97ED0045C454 /* StatsView.swift in Sources */,
+				8044E28E2B6A94480045C454 /* Statistic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
