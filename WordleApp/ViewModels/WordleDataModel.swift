@@ -12,10 +12,12 @@ class WordleDataModel : ObservableObject {
     @Published var incorrectAttempts = [Int](repeating: 0, count: 6)
     @Published var toastText : String?
     @Published var shouldShowStats = false
+    @AppStorage("hardMode") var hardMode : Bool = false
     
     var keyColors = [String: Color]()
     var matchedLetters = [String]()
     var misplacedLetters = [String]()
+    var correctlyPlacedLetters = [String]()
     var selectedWord = ""
     var currentWord = ""
     var currentStat : Statistic
@@ -43,6 +45,7 @@ class WordleDataModel : ObservableObject {
         inPlay = true
         tryIndex = 0
         gameOver = false
+        correctlyPlacedLetters = [String](repeating: "-", count: 5)
         misplacedLetters = []
         matchedLetters = []
         print(selectedWord)
@@ -62,6 +65,30 @@ class WordleDataModel : ObservableObject {
         updateRow()
     }
     
+    func hardCorrectCheck() -> String? {
+        let guessLetters = guesses[tryIndex].guessLetters
+        for i in 0...4 {
+            if correctlyPlacedLetters[i] != "-" {
+                if guessLetters[i] != correctlyPlacedLetters[i] {
+                    let formatter = NumberFormatter()
+                    formatter.numberStyle = .ordinal
+                    return "\(formatter.string(for: i + 1)!) letter must be \(correctlyPlacedLetters[i])"
+                }
+            }
+        }
+        return nil
+    }
+    
+    func hardMisplacedCheck() -> String? {
+        let guessLetter = guesses[tryIndex].guessLetters
+        for letter in misplacedLetters {
+            if !guessLetter.contains(letter) {
+                return "Must contain the letter '\(letter)' ."
+            }
+        }
+        return nil
+    }
+    
     func enterWord() {
         if currentWord == selectedWord {
             gameOver = true
@@ -72,7 +99,16 @@ class WordleDataModel : ObservableObject {
             inPlay = false
         }else {
             if verifyWord() {
-                print("Valid Word")
+                if hardMode {
+                    if let toastString = hardCorrectCheck() {
+                        showToast(with: toastString)
+                        return
+                    }
+                    if let toastString = hardMisplacedCheck() {
+                        showToast(with: toastString)
+                        return
+                    }
+                }
                 setCurrentGuessColors()
                 currentWord = ""
                 tryIndex += 1
@@ -128,6 +164,7 @@ class WordleDataModel : ObservableObject {
                         misplacedLetters.remove(at: index)
                     }
                 }
+                correctlyPlacedLetters[i] = correctLetter
                 frequency[correctLetter]! -= 1
             }
         }

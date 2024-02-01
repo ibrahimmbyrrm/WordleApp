@@ -15,6 +15,7 @@
 		80B539E42B6BCF6E00F659AF /* UIWindow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E32B6BCF6E00F659AF /* UIWindow+Ext.swift */; };
 		80B539E62B6C33CA00F659AF /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E52B6C33CA00F659AF /* ColorSchemeManager.swift */; };
 		80B539E82B6C34BB00F659AF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E72B6C34BB00F659AF /* SettingsView.swift */; };
+		80B539EA2B6C3E4200F659AF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B539E92B6C3E4200F659AF /* InfoView.swift */; };
 		80EC0FF12B686A4600485B38 /* WordleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC0FF02B686A4600485B38 /* WordleAppApp.swift */; };
 		80EC0FF82B686A4800485B38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */; };
 		80EC101D2B686AA400485B38 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC100F2B686AA400485B38 /* GameView.swift */; };
@@ -38,6 +39,7 @@
 		80B539E32B6BCF6E00F659AF /* UIWindow+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ext.swift"; sourceTree = "<group>"; };
 		80B539E52B6C33CA00F659AF /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
 		80B539E72B6C34BB00F659AF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		80B539E92B6C3E4200F659AF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		80EC0FED2B686A4600485B38 /* WordleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EC0FF02B686A4600485B38 /* WordleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleAppApp.swift; sourceTree = "<group>"; };
 		80EC0FF72B686A4800485B38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				8044E28B2B6A6FC80045C454 /* ToastView.swift */,
 				8044E28F2B6A97ED0045C454 /* StatsView.swift */,
 				80B539E72B6C34BB00F659AF /* SettingsView.swift */,
+				80B539E92B6C3E4200F659AF /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				80EC10202B686AA400485B38 /* Keyboard.swift in Sources */,
 				80EC101F2B686AA400485B38 /* LetterButtonView.swift in Sources */,
 				8044E2902B6A97ED0045C454 /* StatsView.swift in Sources */,
+				80B539EA2B6C3E4200F659AF /* InfoView.swift in Sources */,
 				8044E28E2B6A94480045C454 /* Statistic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

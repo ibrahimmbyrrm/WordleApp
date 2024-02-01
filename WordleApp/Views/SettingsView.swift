@@ -9,10 +9,14 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var csManager : ColorSchemeManager
+    @EnvironmentObject var dm : WordleDataModel
     @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack {
             VStack {
+                Toggle(isOn: $dm.hardMode, label: {
+                    Text("Hard Mode")
+                })
                 Text("Change Theme")
                 Picker("Display Mode",selection: $csManager.colorScheme) {
                     Text("Dark").tag(ColorScheme.dark)
@@ -41,4 +45,5 @@ struct SettingsView: View {
 #Preview {
     SettingsView()
         .environmentObject(ColorSchemeManager())
+        .environmentObject(WordleDataModel())
 }

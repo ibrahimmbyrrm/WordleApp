@@ -10,6 +10,7 @@ import SwiftUI
 struct GameView: View {
     @EnvironmentObject var dm : WordleDataModel
     @State var shouldShowSettings = false
+    @State var shouldShowInformation = false
     var body: some View {
         ZStack {
             NavigationStack {
@@ -48,17 +49,26 @@ struct GameView: View {
                                 })
                             }
                             Button(action: {
-                                
+                                shouldShowInformation.toggle()
                             }, label: {
                                 Image(systemName: "questionmark.circle")
                             })
                         }
                     }
                     ToolbarItem(placement: .principal) {
-                        Text("WORDLE")
-                            .font(.largeTitle)
-                            .fontWeight(.heavy)
-                            .foregroundStyle(.primary)
+                        VStack(alignment: .center) {
+                            Text("WORDLE")
+                                .font(.largeTitle)
+                                .fontWeight(.heavy)
+                                .foregroundStyle(dm.hardMode ? .red : .primary)
+                            if dm.hardMode {
+                                Text("HARD MODE !")
+                                    .font(.system(size: 14))
+                                    .foregroundStyle(.red)
+                            }
+                        }
+                        .padding(.top,8)
+                        
                     }
                     ToolbarItem(placement: .topBarTrailing) {
                         HStack {
@@ -78,6 +88,9 @@ struct GameView: View {
                 })
                 .sheet(isPresented: $shouldShowSettings, content: {
                     SettingsView()
+                })
+                .sheet(isPresented: $shouldShowInformation, content: {
+                    InfoView()
                 })
                 
             }
