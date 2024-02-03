@@ -67,7 +67,7 @@ struct StatsView: View {
                     }
                 }
                 Spacer()
-                if !dm.gameOver {
+                if dm.gameOver {
                     HStack {
                         Button(action: {
                             dm.newGame()
